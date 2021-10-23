@@ -849,6 +849,7 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <text x="114.3" y="60.96" size="1.778" layer="91">LUMENIER ESC</text>
 <text x="149.86" y="114.3" size="1.778" layer="91">Move to backplane if these don't fit
 Or use through hole capacitor that comes with the Lumeniers</text>
+<text x="99.06" y="66.04" size="1.778" layer="91">Still available, but like many things, on backorder</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="3.81" y="3.81" smashed="yes">
