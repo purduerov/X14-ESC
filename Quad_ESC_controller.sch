@@ -2269,6 +2269,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="16.51" y="91.948" size="1.778" layer="91">PROGRAMMING HEADERS</text>
 <text x="62.23" y="50.8" size="1.778" layer="91">CAN TRANSCEIVER</text>
 <text x="50.8" y="109.22" size="1.778" layer="91">ID resistor to backplane</text>
+<text x="71.12" y="175.26" size="1.778" layer="91">Not in stock, but still made </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="3.81" y="3.81" smashed="yes">
