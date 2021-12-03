@@ -486,60 +486,52 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+<designrules name="jlcpcb-2layers">
+<description language="en">&lt;b&gt;JLCPCB design rules (2 layers)&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Board thickness: 1.6mm&lt;/li&gt;
+&lt;li&gt;Copper weight: 1oz (35um)&lt;/li&gt;
+&lt;li&gt;Note: annular ring aren't minimal&lt;/li&gt;
+&lt;/ul&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mtIsolate" value="1.6mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="5mil"/>
+<param name="msDrill" value="0.3mm"/>
+<param name="msMicroVia" value="0.3mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
-<param name="rvViaOuter" value="0.25"/>
-<param name="rvViaInner" value="0.25"/>
-<param name="rvMicroViaOuter" value="0.25"/>
-<param name="rvMicroViaInner" value="0.25"/>
+<param name="rvPadTop" value="0.4"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0.4"/>
+<param name="rvViaOuter" value="0"/>
+<param name="rvViaInner" value="0"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
 <param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMaxPadTop" value="80mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxPadBottom" value="80mil"/>
+<param name="rlMinViaOuter" value="3mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="3mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
@@ -785,22 +777,68 @@ design rules under a new name.</description>
 <signal name="ESC4_B">
 <contactref element="U$10" pad="9"/>
 <contactref element="J4" pad="1"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="71.374" y="17.018"/>
+<vertex x="71.882" y="17.526"/>
+<vertex x="74.168" y="17.526"/>
+<vertex x="88.9" y="17.526"/>
+<vertex x="89.662" y="16.764"/>
+<vertex x="89.662" y="10.414"/>
+<vertex x="89.154" y="9.906"/>
+<vertex x="88.9" y="9.652"/>
+<vertex x="86.106" y="9.652"/>
+<vertex x="85.09" y="10.668"/>
+<vertex x="85.09" y="11.684"/>
+<vertex x="84.328" y="12.446"/>
+<vertex x="71.882" y="12.446"/>
+<vertex x="71.374" y="12.954"/>
+</polygon>
 <wire x1="73.94" y1="15.19" x2="87.6935" y2="11.178540625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC4_Y">
 <contactref element="U$10" pad="8"/>
 <contactref element="J4" pad="2"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="71.374" y="11.176"/>
+<vertex x="72.136" y="11.938"/>
+<vertex x="83.566" y="11.938"/>
+<vertex x="84.582" y="10.922"/>
+<vertex x="84.582" y="10.414"/>
+<vertex x="85.852" y="9.144"/>
+<vertex x="90.424" y="9.144"/>
+<vertex x="90.932" y="8.636"/>
+<vertex x="90.932" y="6.096"/>
+<vertex x="90.17" y="5.334"/>
+<vertex x="77.216" y="5.334"/>
+<vertex x="75.946" y="6.604"/>
+<vertex x="72.136" y="6.604"/>
+<vertex x="71.374" y="7.366"/>
+</polygon>
 <wire x1="73.94" y1="9.62" x2="87.6935" y2="6.987540625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC4_R">
 <contactref element="U$10" pad="7"/>
 <contactref element="J4" pad="3"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="71.628" y="6.096"/>
+<vertex x="75.692" y="6.096"/>
+<vertex x="76.962" y="4.826"/>
+<vertex x="88.392" y="4.826"/>
+<vertex x="90.424" y="4.826"/>
+<vertex x="90.932" y="4.318"/>
+<vertex x="90.932" y="1.27"/>
+<vertex x="90.17" y="0.508"/>
+<vertex x="87.122" y="0.508"/>
+<vertex x="72.39" y="0.508"/>
+<vertex x="71.12" y="1.778"/>
+<vertex x="71.12" y="5.588"/>
+</polygon>
 <wire x1="73.94" y1="4.05" x2="87.6935" y2="2.796540625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC3_B">
 <contactref element="U$10" pad="12"/>
 <contactref element="J3" pad="1"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" isolate="0.254">
 <vertex x="72.39" y="39.624"/>
 <vertex x="88.9" y="39.624"/>
 <vertex x="90.17" y="38.354"/>
@@ -810,11 +848,12 @@ design rules under a new name.</description>
 <vertex x="71.12" y="30.226"/>
 <vertex x="71.12" y="38.354"/>
 </polygon>
+<wire x1="73.94" y1="31.89" x2="87.622378125" y2="31.8516" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC3_Y">
 <contactref element="U$10" pad="11"/>
 <contactref element="J3" pad="2"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" isolate="0.254">
 <vertex x="70.866" y="27.432"/>
 <vertex x="72.898" y="29.464"/>
 <vertex x="88.392" y="29.464"/>
@@ -826,11 +865,12 @@ design rules under a new name.</description>
 <vertex x="72.136" y="23.622"/>
 <vertex x="70.866" y="24.892"/>
 </polygon>
+<wire x1="73.94" y1="26.32" x2="87.622378125" y2="27.6606" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC3_R">
 <contactref element="U$10" pad="10"/>
 <contactref element="J3" pad="3"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" isolate="0.254">
 <vertex x="71.12" y="22.098"/>
 <vertex x="72.136" y="23.114"/>
 <vertex x="84.836" y="23.114"/>
@@ -842,30 +882,114 @@ design rules under a new name.</description>
 <vertex x="71.882" y="18.034"/>
 <vertex x="71.12" y="18.796"/>
 </polygon>
+<wire x1="73.94" y1="20.75" x2="87.622378125" y2="23.4696" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC2_B">
 <contactref element="U$10" pad="4"/>
 <contactref element="J2" pad="3"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="30.734" y="17.018"/>
+<vertex x="30.226" y="17.526"/>
+<vertex x="29.718" y="17.526"/>
+<vertex x="12.446" y="17.526"/>
+<vertex x="12.192" y="17.272"/>
+<vertex x="11.43" y="16.51"/>
+<vertex x="11.43" y="10.16"/>
+<vertex x="12.192" y="9.398"/>
+<vertex x="15.24" y="9.398"/>
+<vertex x="16.256" y="10.414"/>
+<vertex x="16.256" y="11.176"/>
+<vertex x="16.256" y="12.192"/>
+<vertex x="16.764" y="12.7"/>
+<vertex x="29.972" y="12.7"/>
+<vertex x="30.734" y="13.462"/>
+</polygon>
 <wire x1="13.992859375" y1="11.05408125" x2="27.94" y2="15.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC2_Y">
 <contactref element="U$10" pad="5"/>
 <contactref element="J2" pad="2"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="29.718" y="12.192"/>
+<vertex x="30.734" y="11.176"/>
+<vertex x="30.734" y="10.922"/>
+<vertex x="30.734" y="7.62"/>
+<vertex x="29.972" y="6.858"/>
+<vertex x="26.67" y="6.858"/>
+<vertex x="24.892" y="5.08"/>
+<vertex x="11.684" y="5.08"/>
+<vertex x="10.922" y="5.842"/>
+<vertex x="10.922" y="7.874"/>
+<vertex x="11.938" y="8.89"/>
+<vertex x="15.494" y="8.89"/>
+<vertex x="16.764" y="10.16"/>
+<vertex x="16.764" y="10.414"/>
+<vertex x="16.764" y="11.43"/>
+<vertex x="17.526" y="12.192"/>
+<vertex x="18.288" y="12.192"/>
+<vertex x="29.464" y="12.192"/>
+</polygon>
 <wire x1="13.992859375" y1="6.86308125" x2="27.94" y2="9.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC2_R">
 <contactref element="U$10" pad="6"/>
 <contactref element="J2" pad="1"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="25.4" y="4.826"/>
+<vertex x="26.924" y="6.35"/>
+<vertex x="29.21" y="6.35"/>
+<vertex x="30.48" y="6.35"/>
+<vertex x="30.734" y="6.096"/>
+<vertex x="31.242" y="5.588"/>
+<vertex x="31.242" y="1.016"/>
+<vertex x="30.48" y="0.254"/>
+<vertex x="11.684" y="0.254"/>
+<vertex x="10.922" y="1.016"/>
+<vertex x="10.922" y="3.81"/>
+<vertex x="11.684" y="4.572"/>
+<vertex x="25.146" y="4.572"/>
+</polygon>
 <wire x1="13.992859375" y1="2.67208125" x2="27.94" y2="4.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC1_Y">
 <contactref element="U$10" pad="2"/>
 <contactref element="J1" pad="2"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="11.43" y="27.686"/>
+<vertex x="12.7" y="28.956"/>
+<vertex x="30.226" y="28.956"/>
+<vertex x="30.988" y="28.194"/>
+<vertex x="30.988" y="27.94"/>
+<vertex x="30.988" y="24.892"/>
+<vertex x="29.718" y="23.622"/>
+<vertex x="16.256" y="23.622"/>
+<vertex x="16.002" y="23.876"/>
+<vertex x="14.478" y="25.4"/>
+<vertex x="12.7" y="25.4"/>
+<vertex x="12.192" y="25.908"/>
+<vertex x="11.684" y="26.416"/>
+<vertex x="11.43" y="26.67"/>
+</polygon>
 <wire x1="14.076678125" y1="27.518359375" x2="27.94" y2="26.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC1_R">
 <contactref element="U$10" pad="3"/>
 <contactref element="J1" pad="1"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="11.43" y="23.876"/>
+<vertex x="12.192" y="24.638"/>
+<vertex x="14.732" y="24.638"/>
+<vertex x="16.256" y="23.114"/>
+<vertex x="16.764" y="23.114"/>
+<vertex x="30.226" y="23.114"/>
+<vertex x="30.988" y="22.352"/>
+<vertex x="30.988" y="19.05"/>
+<vertex x="30.226" y="18.288"/>
+<vertex x="29.972" y="18.034"/>
+<vertex x="17.272" y="18.034"/>
+<vertex x="12.446" y="18.034"/>
+<vertex x="11.43" y="19.05"/>
+</polygon>
 <wire x1="14.076678125" y1="23.327359375" x2="27.94" y2="20.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
@@ -895,14 +1019,56 @@ design rules under a new name.</description>
 <vertex x="67.818" y="42.672"/>
 <vertex x="67.31" y="43.18"/>
 </polygon>
-<wire x1="50.83301875" y1="12.734178125" x2="62.26301875" y2="12.734178125" width="0" layer="19" extent="16-16"/>
+<polygon width="0.1524" layer="16" isolate="0.254">
+<vertex x="52.07" y="43.942"/>
+<vertex x="66.548" y="43.942"/>
+<vertex x="68.326" y="42.164"/>
+<vertex x="68.326" y="8.636"/>
+<vertex x="66.802" y="7.112"/>
+<vertex x="34.798" y="7.112"/>
+<vertex x="33.528" y="8.382"/>
+<vertex x="33.528" y="14.224"/>
+<vertex x="34.798" y="15.494"/>
+<vertex x="63.5" y="15.494"/>
+<vertex x="66.294" y="18.288"/>
+<vertex x="66.294" y="25.654"/>
+<vertex x="65.786" y="26.162"/>
+<vertex x="65.278" y="26.67"/>
+<vertex x="64.008" y="26.67"/>
+<vertex x="54.102" y="26.67"/>
+<vertex x="51.308" y="29.464"/>
+<vertex x="51.308" y="43.18"/>
+</polygon>
+<wire x1="65.024" y1="36.322" x2="65.024" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="62.484" y1="38.862" x2="65.024" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="62.484" y1="36.322" x2="65.024" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="59.944" y1="38.862" x2="62.484" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="59.944" y1="36.322" x2="62.484" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="57.404" y1="38.862" x2="59.944" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="57.404" y1="36.322" x2="59.944" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="54.864" y1="38.862" x2="57.404" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="54.864" y1="36.322" x2="57.404" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="52.324" y1="38.862" x2="54.864" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="52.324" y1="36.322" x2="54.864" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="55.43" y1="31.64" x2="54.864" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="50.83301875" y1="12.734178125" x2="55.43" y2="31.64" width="0" layer="19" extent="1-16"/>
+<wire x1="62.26301875" y1="12.734178125" x2="50.83301875" y2="12.734178125" width="0" layer="19" extent="16-16"/>
 <wire x1="39.40301875" y1="12.734178125" x2="50.83301875" y2="12.734178125" width="0" layer="19" extent="16-16"/>
-<wire x1="55.43" y1="31.64" x2="50.83301875" y2="12.734178125" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ESC1_B">
 <contactref element="U$10" pad="1"/>
 <contactref element="J1" pad="3"/>
 <wire x1="27.759359375" y1="31.709359375" x2="27.94" y2="31.89" width="0.1524" layer="1"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="11.684" y="31.496"/>
+<vertex x="13.462" y="29.718"/>
+<vertex x="30.226" y="29.718"/>
+<vertex x="30.988" y="30.48"/>
+<vertex x="30.988" y="39.624"/>
+<vertex x="30.226" y="40.386"/>
+<vertex x="12.954" y="40.386"/>
+<vertex x="11.684" y="39.116"/>
+</polygon>
 <wire x1="14.076678125" y1="31.709359375" x2="27.759359375" y2="31.709359375" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
