@@ -681,7 +681,7 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="GND@11"/>
 <contactref element="U$2" pad="GND@12"/>
 <contactref element="U$1" pad="GND"/>
-<polygon width="0.6096" layer="1">
+<polygon width="0.6096" layer="1" isolate="0.254">
 <vertex x="34.29" y="44.45"/>
 <vertex x="47.244" y="44.45"/>
 <vertex x="50.292" y="41.402"/>
@@ -699,7 +699,7 @@ Please make sure your boards conform to these design rules.
 <vertex x="32.512" y="43.18"/>
 <vertex x="33.782" y="44.45"/>
 </polygon>
-<polygon width="0.6096" layer="16">
+<polygon width="0.6096" layer="16" isolate="0.254">
 <vertex x="39.116" y="5.588"/>
 <vertex x="40.386" y="6.858"/>
 <vertex x="47.244" y="6.858"/>
@@ -713,7 +713,7 @@ Please make sure your boards conform to these design rules.
 <vertex x="36.068" y="0.254"/>
 <vertex x="36.068" y="2.54"/>
 </polygon>
-<polygon width="0.6096" layer="16">
+<polygon width="0.6096" layer="16" isolate="0.254">
 <vertex x="36.068" y="46.482"/>
 <vertex x="45.212" y="46.482"/>
 <vertex x="50.292" y="41.402"/>
@@ -936,7 +936,7 @@ Please make sure your boards conform to these design rules.
 <vertex x="67.056" y="43.434"/>
 </polygon>
 <contactref element="U$1" pad="VIN"/>
-<polygon width="0.254" layer="16">
+<polygon width="0.254" layer="16" isolate="0.254">
 <vertex x="53.34" y="44.45"/>
 <vertex x="66.548" y="44.45"/>
 <vertex x="68.58" y="42.418"/>
