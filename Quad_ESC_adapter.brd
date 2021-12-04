@@ -719,7 +719,7 @@
 <element name="J3" library="CONN, IPBD-03-S-K" package="IPBD-03-S-K" value="IBPD-SOCKET" x="91.368878125" y="27.6606" smashed="yes" rot="R270"/>
 <element name="J4" library="CONN, IPBD-03-S-K" package="IPBD-03-S-K" value="IBPD-SOCKET" x="91.44" y="6.987540625" smashed="yes" rot="R270"/>
 <element name="U$10" library="Lumenier ESC" package="LUMENIER_QUAD-NO-CUT" package3d_urn="urn:adsk.eagle:package:24294694/3" value="LUMENIER_QUAD-NO-CUT" x="27.94" y="1.27" smashed="yes">
-<attribute name="NAME" x="29.21" y="34.29" size="1.27" layer="21"/>
+<attribute name="NAME" x="29.464" y="34.29" size="1.27" layer="21"/>
 </element>
 <element name="U$2" library="Backplane_ESC_adapter" package="BACKPLANE_ESC_ADAPTER_ESC_PWR" value="BACKPLANE_ESC_ADAPTER_PWRESC" x="0" y="0" smashed="yes">
 <attribute name="NAME" x="22.86" y="35.179" size="1.27" layer="25"/>
@@ -743,10 +743,9 @@
 <contactref element="U$2" pad="GND@10"/>
 <contactref element="U$2" pad="GND@11"/>
 <contactref element="U$2" pad="GND@12"/>
-<polygon width="0.1524" layer="16" isolate="0.254">
+<polygon width="1.27" layer="16" isolate="0.254">
 <vertex x="35.306" y="42.672"/>
 <vertex x="33.02" y="40.386"/>
-<vertex x="33.02" y="38.862"/>
 <vertex x="33.02" y="20.32"/>
 <vertex x="36.576" y="16.764"/>
 <vertex x="63.5" y="16.764"/>
@@ -755,61 +754,67 @@
 <vertex x="64.262" y="25.908"/>
 <vertex x="57.404" y="25.908"/>
 <vertex x="57.15" y="25.654"/>
-<vertex x="54.61" y="25.654"/>
-<vertex x="52.578" y="27.686"/>
-<vertex x="50.8" y="29.464"/>
-<vertex x="50.8" y="41.402"/>
+<vertex x="52.832" y="25.654"/>
+<vertex x="50.292" y="28.194"/>
+<vertex x="50.292" y="41.91"/>
 <vertex x="49.53" y="42.672"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.27" layer="1" isolate="0.254">
 <vertex x="34.29" y="43.688"/>
 <vertex x="33.02" y="42.418"/>
 <vertex x="33.02" y="30.988"/>
 <vertex x="35.306" y="28.702"/>
-<vertex x="40.386" y="28.702"/>
-<vertex x="50.038" y="28.702"/>
-<vertex x="50.8" y="29.464"/>
-<vertex x="50.8" y="41.402"/>
-<vertex x="49.53" y="42.672"/>
+<vertex x="49.276" y="28.702"/>
+<vertex x="50.292" y="29.718"/>
+<vertex x="50.292" y="41.91"/>
 <vertex x="48.514" y="43.688"/>
 </polygon>
+<wire x1="49.784" y1="36.322" x2="49.784" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="47.244" y1="38.862" x2="49.784" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="47.244" y1="36.322" x2="49.784" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="44.704" y1="38.862" x2="47.244" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="44.704" y1="36.322" x2="47.244" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="42.164" y1="38.862" x2="44.704" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="42.164" y1="36.322" x2="44.704" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="39.624" y1="38.862" x2="42.164" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="39.624" y1="36.322" x2="42.164" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="37.084" y1="38.862" x2="39.624" y2="38.862" width="0" layer="19" extent="1-1"/>
+<wire x1="37.084" y1="36.322" x2="39.624" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="46.45" y1="31.64" x2="47.244" y2="36.322" width="0" layer="19" extent="1-1"/>
+<wire x1="50.83301875" y1="21.134178125" x2="46.45" y2="31.64" width="0" layer="19" extent="1-16"/>
+<wire x1="62.26301875" y1="21.134178125" x2="50.83301875" y2="21.134178125" width="0" layer="19" extent="16-16"/>
+<wire x1="39.40301875" y1="21.134178125" x2="50.83301875" y2="21.134178125" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ESC4_B">
 <contactref element="U$10" pad="9"/>
 <contactref element="J4" pad="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="71.374" y="17.018"/>
-<vertex x="71.882" y="17.526"/>
-<vertex x="74.168" y="17.526"/>
-<vertex x="88.9" y="17.526"/>
-<vertex x="89.662" y="16.764"/>
-<vertex x="89.662" y="10.414"/>
-<vertex x="89.154" y="9.906"/>
-<vertex x="88.9" y="9.652"/>
-<vertex x="86.106" y="9.652"/>
-<vertex x="85.09" y="10.668"/>
-<vertex x="85.09" y="11.684"/>
-<vertex x="84.328" y="12.446"/>
-<vertex x="71.882" y="12.446"/>
-<vertex x="71.374" y="12.954"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="71.374" y="16.51"/>
+<vertex x="72.136" y="17.272"/>
+<vertex x="88.392" y="17.272"/>
+<vertex x="89.662" y="16.002"/>
+<vertex x="89.662" y="11.176"/>
+<vertex x="88.646" y="10.16"/>
+<vertex x="86.614" y="10.16"/>
+<vertex x="83.82" y="12.954"/>
+<vertex x="72.39" y="12.954"/>
+<vertex x="71.374" y="13.97"/>
 </polygon>
 <wire x1="73.94" y1="15.19" x2="87.6935" y2="11.178540625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC4_Y">
 <contactref element="U$10" pad="8"/>
 <contactref element="J4" pad="2"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="71.374" y="11.176"/>
-<vertex x="72.136" y="11.938"/>
-<vertex x="83.566" y="11.938"/>
-<vertex x="84.582" y="10.922"/>
-<vertex x="84.582" y="10.414"/>
+<vertex x="71.882" y="11.684"/>
+<vertex x="83.312" y="11.684"/>
 <vertex x="85.852" y="9.144"/>
 <vertex x="90.424" y="9.144"/>
 <vertex x="90.932" y="8.636"/>
-<vertex x="90.932" y="6.096"/>
-<vertex x="90.17" y="5.334"/>
-<vertex x="77.216" y="5.334"/>
+<vertex x="90.932" y="7.112"/>
+<vertex x="89.662" y="5.842"/>
+<vertex x="76.708" y="5.842"/>
 <vertex x="75.946" y="6.604"/>
 <vertex x="72.136" y="6.604"/>
 <vertex x="71.374" y="7.366"/>
@@ -819,50 +824,47 @@
 <signal name="ESC4_R">
 <contactref element="U$10" pad="7"/>
 <contactref element="J4" pad="3"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="71.628" y="6.096"/>
-<vertex x="75.692" y="6.096"/>
-<vertex x="76.962" y="4.826"/>
-<vertex x="88.392" y="4.826"/>
-<vertex x="90.424" y="4.826"/>
-<vertex x="90.932" y="4.318"/>
+<polygon width="1.016" layer="1" isolate="1.016">
+<vertex x="71.882" y="5.334"/>
+<vertex x="75.438" y="5.334"/>
+<vertex x="76.2" y="4.572"/>
+<vertex x="89.408" y="4.572"/>
+<vertex x="90.932" y="3.048"/>
 <vertex x="90.932" y="1.27"/>
 <vertex x="90.17" y="0.508"/>
-<vertex x="87.122" y="0.508"/>
 <vertex x="72.39" y="0.508"/>
 <vertex x="71.12" y="1.778"/>
-<vertex x="71.12" y="5.588"/>
+<vertex x="71.12" y="4.572"/>
 </polygon>
 <wire x1="73.94" y1="4.05" x2="87.6935" y2="2.796540625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC3_B">
 <contactref element="U$10" pad="12"/>
 <contactref element="J3" pad="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="72.39" y="39.624"/>
-<vertex x="88.9" y="39.624"/>
-<vertex x="90.17" y="38.354"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="72.39" y="41.656"/>
+<vertex x="88.9" y="41.656"/>
+<vertex x="90.17" y="40.386"/>
 <vertex x="90.17" y="30.988"/>
-<vertex x="89.154" y="29.972"/>
-<vertex x="71.374" y="29.972"/>
+<vertex x="89.408" y="30.226"/>
 <vertex x="71.12" y="30.226"/>
-<vertex x="71.12" y="38.354"/>
+<vertex x="71.12" y="40.386"/>
 </polygon>
 <wire x1="73.94" y1="31.89" x2="87.622378125" y2="31.8516" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC3_Y">
 <contactref element="U$10" pad="11"/>
 <contactref element="J3" pad="2"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="70.866" y="27.432"/>
-<vertex x="72.898" y="29.464"/>
-<vertex x="88.392" y="29.464"/>
+<vertex x="72.39" y="28.956"/>
+<vertex x="88.9" y="28.956"/>
 <vertex x="89.408" y="28.448"/>
 <vertex x="89.408" y="26.416"/>
 <vertex x="88.392" y="25.4"/>
-<vertex x="86.36" y="25.4"/>
-<vertex x="84.582" y="23.622"/>
-<vertex x="72.136" y="23.622"/>
+<vertex x="85.344" y="25.4"/>
+<vertex x="83.82" y="23.876"/>
+<vertex x="71.882" y="23.876"/>
 <vertex x="70.866" y="24.892"/>
 </polygon>
 <wire x1="73.94" y1="26.32" x2="87.622378125" y2="27.6606" width="0" layer="19" extent="1-1"/>
@@ -870,16 +872,15 @@
 <signal name="ESC3_R">
 <contactref element="U$10" pad="10"/>
 <contactref element="J3" pad="3"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="71.12" y="22.098"/>
-<vertex x="72.136" y="23.114"/>
-<vertex x="84.836" y="23.114"/>
-<vertex x="86.614" y="24.892"/>
-<vertex x="88.646" y="24.892"/>
+<vertex x="71.628" y="22.606"/>
+<vertex x="84.328" y="22.606"/>
+<vertex x="85.852" y="24.13"/>
 <vertex x="89.408" y="24.13"/>
 <vertex x="89.408" y="19.05"/>
-<vertex x="88.392" y="18.034"/>
-<vertex x="71.882" y="18.034"/>
+<vertex x="88.9" y="18.542"/>
+<vertex x="71.374" y="18.542"/>
 <vertex x="71.12" y="18.796"/>
 </polygon>
 <wire x1="73.94" y1="20.75" x2="87.622378125" y2="23.4696" width="0" layer="19" extent="1-1"/>
@@ -887,108 +888,89 @@
 <signal name="ESC2_B">
 <contactref element="U$10" pad="4"/>
 <contactref element="J2" pad="3"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="30.734" y="17.018"/>
 <vertex x="30.226" y="17.526"/>
-<vertex x="29.718" y="17.526"/>
 <vertex x="12.446" y="17.526"/>
-<vertex x="12.192" y="17.272"/>
 <vertex x="11.43" y="16.51"/>
-<vertex x="11.43" y="10.16"/>
-<vertex x="12.192" y="9.398"/>
-<vertex x="15.24" y="9.398"/>
-<vertex x="16.256" y="10.414"/>
-<vertex x="16.256" y="11.176"/>
-<vertex x="16.256" y="12.192"/>
-<vertex x="16.764" y="12.7"/>
-<vertex x="29.972" y="12.7"/>
-<vertex x="30.734" y="13.462"/>
+<vertex x="11.43" y="10.922"/>
+<vertex x="12.192" y="10.16"/>
+<vertex x="14.986" y="10.16"/>
+<vertex x="15.748" y="10.922"/>
+<vertex x="15.748" y="11.938"/>
+<vertex x="17.526" y="13.716"/>
+<vertex x="29.718" y="13.716"/>
+<vertex x="30.734" y="14.732"/>
 </polygon>
 <wire x1="13.992859375" y1="11.05408125" x2="27.94" y2="15.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC2_Y">
 <contactref element="U$10" pad="5"/>
 <contactref element="J2" pad="2"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="29.718" y="12.192"/>
 <vertex x="30.734" y="11.176"/>
-<vertex x="30.734" y="10.922"/>
-<vertex x="30.734" y="7.62"/>
-<vertex x="29.972" y="6.858"/>
-<vertex x="26.67" y="6.858"/>
-<vertex x="24.892" y="5.08"/>
-<vertex x="11.684" y="5.08"/>
-<vertex x="10.922" y="5.842"/>
+<vertex x="30.734" y="8.89"/>
+<vertex x="29.21" y="7.366"/>
+<vertex x="26.67" y="7.366"/>
+<vertex x="24.892" y="5.588"/>
+<vertex x="11.938" y="5.588"/>
+<vertex x="10.922" y="6.604"/>
 <vertex x="10.922" y="7.874"/>
 <vertex x="11.938" y="8.89"/>
 <vertex x="15.494" y="8.89"/>
-<vertex x="16.764" y="10.16"/>
-<vertex x="16.764" y="10.414"/>
-<vertex x="16.764" y="11.43"/>
-<vertex x="17.526" y="12.192"/>
-<vertex x="18.288" y="12.192"/>
-<vertex x="29.464" y="12.192"/>
+<vertex x="18.796" y="12.192"/>
 </polygon>
 <wire x1="13.992859375" y1="6.86308125" x2="27.94" y2="9.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC2_R">
 <contactref element="U$10" pad="6"/>
 <contactref element="J2" pad="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="25.4" y="4.826"/>
-<vertex x="26.924" y="6.35"/>
-<vertex x="29.21" y="6.35"/>
-<vertex x="30.48" y="6.35"/>
-<vertex x="30.734" y="6.096"/>
-<vertex x="31.242" y="5.588"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="25.654" y="4.318"/>
+<vertex x="27.432" y="6.096"/>
+<vertex x="29.972" y="6.096"/>
+<vertex x="31.242" y="4.826"/>
 <vertex x="31.242" y="1.016"/>
 <vertex x="30.48" y="0.254"/>
 <vertex x="11.684" y="0.254"/>
 <vertex x="10.922" y="1.016"/>
 <vertex x="10.922" y="3.81"/>
-<vertex x="11.684" y="4.572"/>
-<vertex x="25.146" y="4.572"/>
+<vertex x="11.43" y="4.318"/>
 </polygon>
 <wire x1="13.992859375" y1="2.67208125" x2="27.94" y2="4.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC1_Y">
 <contactref element="U$10" pad="2"/>
 <contactref element="J1" pad="2"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="11.43" y="27.686"/>
-<vertex x="12.7" y="28.956"/>
-<vertex x="30.226" y="28.956"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="11.684" y="27.94"/>
+<vertex x="12.954" y="29.21"/>
+<vertex x="29.972" y="29.21"/>
 <vertex x="30.988" y="28.194"/>
-<vertex x="30.988" y="27.94"/>
-<vertex x="30.988" y="24.892"/>
-<vertex x="29.718" y="23.622"/>
-<vertex x="16.256" y="23.622"/>
-<vertex x="16.002" y="23.876"/>
-<vertex x="14.478" y="25.4"/>
-<vertex x="12.7" y="25.4"/>
-<vertex x="12.192" y="25.908"/>
-<vertex x="11.684" y="26.416"/>
-<vertex x="11.43" y="26.67"/>
+<vertex x="30.988" y="26.162"/>
+<vertex x="29.21" y="24.384"/>
+<vertex x="16.764" y="24.384"/>
+<vertex x="15.494" y="25.654"/>
+<vertex x="12.954" y="25.654"/>
+<vertex x="11.684" y="26.924"/>
 </polygon>
 <wire x1="14.076678125" y1="27.518359375" x2="27.94" y2="26.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESC1_R">
 <contactref element="U$10" pad="3"/>
 <contactref element="J1" pad="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="11.43" y="23.876"/>
-<vertex x="12.192" y="24.638"/>
-<vertex x="14.732" y="24.638"/>
-<vertex x="16.256" y="23.114"/>
-<vertex x="16.764" y="23.114"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="11.43" y="23.622"/>
+<vertex x="12.192" y="24.384"/>
+<vertex x="14.478" y="24.384"/>
+<vertex x="15.748" y="23.114"/>
 <vertex x="30.226" y="23.114"/>
 <vertex x="30.988" y="22.352"/>
-<vertex x="30.988" y="19.05"/>
-<vertex x="30.226" y="18.288"/>
-<vertex x="29.972" y="18.034"/>
-<vertex x="17.272" y="18.034"/>
-<vertex x="12.446" y="18.034"/>
-<vertex x="11.43" y="19.05"/>
+<vertex x="30.988" y="19.812"/>
+<vertex x="29.972" y="18.796"/>
+<vertex x="12.7" y="18.796"/>
+<vertex x="11.43" y="20.066"/>
 </polygon>
 <wire x1="14.076678125" y1="23.327359375" x2="27.94" y2="20.75" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1009,35 +991,33 @@
 <contactref element="U$2" pad="12V@10"/>
 <contactref element="U$2" pad="12V@11"/>
 <contactref element="U$2" pad="12V@12"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="51.816" y="43.18"/>
-<vertex x="51.308" y="42.672"/>
-<vertex x="51.308" y="29.464"/>
+<polygon width="1.27" layer="1" isolate="0.254">
+<vertex x="53.086" y="43.434"/>
+<vertex x="51.816" y="42.164"/>
+<vertex x="51.816" y="28.956"/>
 <vertex x="52.324" y="28.448"/>
 <vertex x="65.786" y="28.448"/>
 <vertex x="67.818" y="30.48"/>
 <vertex x="67.818" y="42.672"/>
-<vertex x="67.31" y="43.18"/>
+<vertex x="67.056" y="43.434"/>
 </polygon>
-<polygon width="0.1524" layer="16" isolate="0.254">
-<vertex x="52.07" y="43.942"/>
-<vertex x="66.548" y="43.942"/>
+<polygon width="1.27" layer="16" isolate="0.254">
+<vertex x="53.848" y="44.45"/>
+<vertex x="66.04" y="44.45"/>
 <vertex x="68.326" y="42.164"/>
 <vertex x="68.326" y="8.636"/>
 <vertex x="66.802" y="7.112"/>
 <vertex x="34.798" y="7.112"/>
 <vertex x="33.528" y="8.382"/>
 <vertex x="33.528" y="14.224"/>
-<vertex x="34.798" y="15.494"/>
-<vertex x="63.5" y="15.494"/>
-<vertex x="66.294" y="18.288"/>
-<vertex x="66.294" y="25.654"/>
-<vertex x="65.786" y="26.162"/>
-<vertex x="65.278" y="26.67"/>
-<vertex x="64.008" y="26.67"/>
-<vertex x="54.102" y="26.67"/>
-<vertex x="51.308" y="29.464"/>
-<vertex x="51.308" y="43.18"/>
+<vertex x="34.544" y="15.24"/>
+<vertex x="64.008" y="15.24"/>
+<vertex x="67.31" y="18.542"/>
+<vertex x="67.31" y="25.146"/>
+<vertex x="65.024" y="27.432"/>
+<vertex x="53.34" y="27.432"/>
+<vertex x="51.816" y="28.956"/>
+<vertex x="51.816" y="42.418"/>
 </polygon>
 <wire x1="65.024" y1="36.322" x2="65.024" y2="38.862" width="0" layer="19" extent="1-1"/>
 <wire x1="62.484" y1="38.862" x2="65.024" y2="38.862" width="0" layer="19" extent="1-1"/>
@@ -1058,18 +1038,17 @@
 <signal name="ESC1_B">
 <contactref element="U$10" pad="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="27.759359375" y1="31.709359375" x2="27.94" y2="31.89" width="0.1524" layer="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
+<polygon width="1.016" layer="1" isolate="0.254">
 <vertex x="11.684" y="31.496"/>
-<vertex x="13.462" y="29.718"/>
-<vertex x="30.226" y="29.718"/>
-<vertex x="30.988" y="30.48"/>
+<vertex x="12.446" y="30.734"/>
+<vertex x="29.21" y="30.734"/>
+<vertex x="30.988" y="32.512"/>
 <vertex x="30.988" y="39.624"/>
 <vertex x="30.226" y="40.386"/>
 <vertex x="12.954" y="40.386"/>
 <vertex x="11.684" y="39.116"/>
 </polygon>
-<wire x1="14.076678125" y1="31.709359375" x2="27.759359375" y2="31.709359375" width="0" layer="19" extent="1-1"/>
+<wire x1="14.076678125" y1="31.709359375" x2="27.94" y2="31.89" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
