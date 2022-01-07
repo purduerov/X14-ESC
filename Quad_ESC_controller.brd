@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -189,6 +189,11 @@
 <wire x1="25.781" y1="34.163" x2="0" y2="34.163" width="0" layer="20"/>
 <wire x1="0" y1="34.163" x2="0" y2="0" width="0" layer="20"/>
 <text x="2.921" y="0.0635" size="0.0254" layer="200" font="vector">C:/Users/Rach s PC/Desktop/kingsman logo.bmp'</text>
+<text x="3.937" y="15.621" size="0.4572" layer="25" rot="R90">X14 ESC Controller
+Peter Sperry
+Erin Park, Read Hedl
+Katherine Sandys
+1/7/2022</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
@@ -1097,8 +1102,8 @@ Please make sure your boards conform to these design rules.
 <vertex x="-1.143" y="34.163"/>
 </polygon>
 <contactref element="U$3" pad="10"/>
-<via x="1.143" y="17.399" extent="1-16" drill="0.35"/>
-<via x="1.3589" y="21.2852" extent="1-16" drill="0.35"/>
+<via x="1.651" y="19.812" extent="1-16" drill="0.35"/>
+<via x="0.9779" y="22.0472" extent="1-16" drill="0.35"/>
 <via x="9.779" y="20.193" extent="1-16" drill="0.35"/>
 <via x="6.35" y="23.622" extent="1-16" drill="0.35"/>
 <via x="10.541" y="22.4028" extent="1-16" drill="0.35"/>
@@ -1586,6 +1591,10 @@ Please make sure your boards conform to these design rules.
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -665,96 +665,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="CAP, aluminin-capacitor-brick-UCM1H331MNL1GS">
-<description>&lt;Nichicon 330uF 50 V Aluminium Electrolytic Capacitor SMD, CM Series 2000h 10 (Dia.) x 10mm&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="CAPAE1030X1050N" urn="urn:adsk.eagle:footprint:24202088/1" locally_modified="yes">
-<description>&lt;b&gt;10X10&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="+" x="-4.2" y="0" dx="4.3" dy="2.15" layer="1"/>
-<smd name="-" x="4.2" y="0" dx="4.3" dy="2.15" layer="1"/>
-<text x="0.254" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
-<wire x1="5.15" y1="5.15" x2="-2.575" y2="5.15" width="0.1" layer="21"/>
-<wire x1="-2.575" y1="5.15" x2="-5.15" y2="2.575" width="0.1" layer="21"/>
-<wire x1="-5.15" y1="2.575" x2="-5.15" y2="-2.575" width="0.1" layer="21"/>
-<wire x1="-5.15" y1="-2.575" x2="-2.575" y2="-5.15" width="0.1" layer="21"/>
-<wire x1="-2.575" y1="-5.15" x2="5.15" y2="-5.15" width="0.1" layer="21"/>
-<wire x1="5.15" y1="-5.15" x2="5.15" y2="5.15" width="0.1" layer="21"/>
-<wire x1="-6.858" y1="1.524" x2="-5.334" y2="1.524" width="0.127" layer="39"/>
-<wire x1="-5.334" y1="1.524" x2="-5.334" y2="2.794" width="0.127" layer="39"/>
-<wire x1="-5.334" y1="2.794" x2="-2.54" y2="5.588" width="0.127" layer="39"/>
-<wire x1="-2.54" y1="5.588" x2="5.588" y2="5.588" width="0.127" layer="39"/>
-<wire x1="5.588" y1="5.588" x2="5.588" y2="1.524" width="0.127" layer="39"/>
-<wire x1="5.588" y1="1.524" x2="6.858" y2="1.524" width="0.127" layer="39"/>
-<wire x1="6.858" y1="1.524" x2="6.858" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="6.858" y1="-1.524" x2="5.588" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="5.588" y1="-1.524" x2="5.588" y2="-5.588" width="0.127" layer="39"/>
-<wire x1="5.588" y1="-5.588" x2="-2.54" y2="-5.588" width="0.127" layer="39"/>
-<wire x1="-2.54" y1="-5.588" x2="-5.588" y2="-2.54" width="0.127" layer="39"/>
-<wire x1="-5.588" y1="-2.54" x2="-5.588" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="-5.588" y1="-1.524" x2="-6.858" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="-6.858" y1="-1.524" x2="-6.858" y2="1.524" width="0.127" layer="39"/>
-<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="CAPAE1030X1050N" urn="urn:adsk.eagle:package:24202090/2" type="model">
-<description>&lt;b&gt;10X10&lt;/b&gt;&lt;br&gt;
-</description>
-<packageinstances>
-<packageinstance name="CAPAE1030X1050N"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="UCM1H331MNL1GS">
-<text x="1.27" y="1.27" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<pin name="+" x="0" y="2.54" visible="pad" length="short" rot="R270"/>
-<pin name="-" x="0" y="-4.445" visible="pad" length="short" rot="R90"/>
-<wire x1="-1.27" y1="0.508" x2="-1.27" y2="1.524" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="1.016" x2="-1.778" y2="1.016" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.762" x2="0" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-67.380135"/>
-<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.1524" layer="94"/>
-<text x="1.27" y="-3.81" size="1.778" layer="95" align="center-left">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="UCM1H331MNL1GS" prefix="C" uservalue="yes">
-<description>&lt;b&gt;Nichicon 330uF 50 V Aluminium Electrolytic Capacitor SMD, CM Series 2000h 10 (Dia.) x 10mm&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="UCM1H331MNL1GS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CAPAE1030X1050N">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24202090/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="UCM1H331MNL1GS" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/ucm1h331mnl1gs/nichicon" constant="no"/>
-<attribute name="DESCRIPTION" value="Nichicon 330uF 50 V Aluminium Electrolytic Capacitor SMD, CM Series 2000h 10 (Dia.) x 10mm" constant="no"/>
-<attribute name="HEIGHT" value="10.5mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Nichicon" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="UCM1H331MNL1GS" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="647-UCM1H331MNL1GS" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Nichicon/UCM1H331MNL1GS?qs=DSgADHjnLTkTovFLdbC%252BNg%3D%3D" constant="no"/>
-<attribute name="VALUE" value="330uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CONN, IPBD-03-S-K">
 <packages>
 <package name="IPBD-03-S-K">
@@ -816,7 +726,6 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
 <part name="U$10" library="Lumenier ESC" deviceset="LUMENIER_QUAD-NO-CUT" device="" package3d_urn="urn:adsk.eagle:package:24294694/3"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J1" library="CONN, IPBD-03-S-K" deviceset="IBPD-SOCKET" device=""/>
 <part name="J4" library="CONN, IPBD-03-S-K" deviceset="IBPD-SOCKET" device=""/>
@@ -827,17 +736,12 @@ Source: &lt;a href="http://www.nichicon.co.jp/english/products/pdfs/e-ucm.pdf"&g
 <part name="H3" library="Mounting Holes" deviceset="6-32-HOLE" device="" package3d_urn="urn:adsk.eagle:package:24384748/2"/>
 <part name="H4" library="Mounting Holes" deviceset="6-32-HOLE" device="" package3d_urn="urn:adsk.eagle:package:24384748/2"/>
 <part name="U$2" library="Backplane_ESC_adapter" deviceset="BACKPLANE_ESC_ADAPTER_PWR" device="ESC"/>
-<part name="C5" library="CAP, aluminin-capacitor-brick-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="330uF"/>
-<part name="C6" library="CAP, aluminin-capacitor-brick-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="330uF"/>
-<part name="C1" library="CAP, aluminin-capacitor-brick-UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" package3d_urn="urn:adsk.eagle:package:24202090/2" value="330uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="209.55" y="91.44" size="1.778" layer="91">BACKPLANE CONNECTIONS</text>
 <text x="114.3" y="60.96" size="1.778" layer="91">LUMENIER ESC</text>
-<text x="149.86" y="114.3" size="1.778" layer="91">Move to backplane if these don't fit
-Or use through hole capacitor that comes with the Lumeniers</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="3.81" y="3.81" smashed="yes">
@@ -850,9 +754,6 @@ Or use through hole capacitor that comes with the Lumeniers</text>
 </instance>
 <instance part="SUPPLY5" gate="GND" x="127" y="17.78" smashed="yes">
 <attribute name="VALUE" x="125.095" y="14.605" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY1" gate="GND" x="162.56" y="88.9" smashed="yes">
-<attribute name="VALUE" x="160.655" y="85.725" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="210.82" y="43.18" smashed="yes">
 <attribute name="VALUE" x="208.915" y="40.005" size="1.778" layer="96"/>
@@ -888,18 +789,6 @@ Or use through hole capacitor that comes with the Lumeniers</text>
 <instance part="U$2" gate="G$1" x="210.82" y="63.5" smashed="yes">
 <attribute name="NAME" x="208.28" y="60.96" size="1.27" layer="95" rot="R90"/>
 </instance>
-<instance part="C5" gate="G$1" x="154.94" y="101.6" smashed="yes">
-<attribute name="NAME" x="156.21" y="102.87" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="156.21" y="97.79" size="1.778" layer="95" align="center-left"/>
-</instance>
-<instance part="C6" gate="G$1" x="170.18" y="101.6" smashed="yes">
-<attribute name="NAME" x="171.45" y="102.87" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="171.45" y="97.79" size="1.778" layer="95" align="center-left"/>
-</instance>
-<instance part="C1" gate="G$1" x="182.88" y="101.6" smashed="yes">
-<attribute name="NAME" x="184.15" y="102.87" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="184.15" y="97.79" size="1.778" layer="95" align="center-left"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -909,21 +798,6 @@ Or use through hole capacitor that comes with the Lumeniers</text>
 <pinref part="U$10" gate="G$1" pin="GND"/>
 <wire x1="127" y1="22.86" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<wire x1="154.94" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="93.98" x2="182.88" y2="97.155" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="97.155" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<junction x="170.18" y="93.98"/>
-<wire x1="154.94" y1="97.155" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="93.98" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
-<junction x="162.56" y="93.98"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="-"/>
-<pinref part="C6" gate="G$1" pin="-"/>
-<pinref part="C1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
@@ -1070,21 +944,6 @@ Or use through hole capacitor that comes with the Lumeniers</text>
 <label x="127" y="55.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="106.68" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="104.14" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
-<junction x="170.18" y="106.68"/>
-<wire x1="154.94" y1="104.14" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="106.68" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
-<junction x="162.56" y="106.68"/>
-<label x="162.56" y="109.22" size="1.778" layer="95" xref="yes"/>
-<pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="C6" gate="G$1" pin="+"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-</segment>
-<segment>
 <wire x1="210.82" y1="76.2" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="210.82" y="81.28" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$2" gate="G$1" pin="12V"/>
@@ -1108,10 +967,6 @@ Or use through hole capacitor that comes with the Lumeniers</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
